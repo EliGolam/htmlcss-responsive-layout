@@ -11,8 +11,8 @@ body {
     position: relative;
 }
 
-body > * {
-    padding: 1.5rem;
+body > * > * {
+    padding: 2rem;
 }
 
 h2 { font-size: var(--fontsize-heading); font-weight: var(--fontweight-normal); }
@@ -85,14 +85,14 @@ main {
     cursor: pointer;
 
     transition: 
-        opacity 250ms,
+        transform 250ms ease-out,
         color 250ms ease-in,
         background-color 250ms ease-in,
         border-color 200ms;
 }
 
 .ui-button:hover {
-    opacity: .7;
+    transform: scale(105%);
 }
 /* ------------------------------------------ */
 
@@ -128,7 +128,7 @@ li:not([class]) a:hover {
 .card-item { flex-grow: 1; }
 
 .card-box {
-    border-radius: 25px;
+    border-radius: 35px;
     text-align: center;
     padding: 1rem 2rem 2.5rem 2rem;
     overflow: hidden;
@@ -257,6 +257,19 @@ li:not([class]) a:hover {
     font-size: var(--fontsize-large-icon);
 }
 /*#endregion : key-features */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/*#region : planning */
+.scroll-down {
+    margin: 2rem auto;
+}
+
+.scroll-down > * {
+    padding: .9rem 1rem;
+    border-radius: 50%;
+}
+/*#endregion : planning */
 /* ------------------------------------------ */
 
 /* --------------------------------------------------------------------------------- */
