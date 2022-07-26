@@ -93,3 +93,7 @@ HTML components: COMPLETED
 ### V 0.3.2 : 
 
 - Completed Styling of key-features section
+
+### V 0.3.3
+
+- Completed styling of planning section

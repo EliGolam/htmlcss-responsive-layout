@@ -15,7 +15,7 @@ body > * > * {
     padding: 2rem;
 }
 
-h2 { font-size: var(--fontsize-heading); font-weight: var(--fontweight-normal); }
+h2 { font-size: var(--fontsize-heading); font-weight: var(--fontweight-heavy); }
 /*#endregion GENERAL DEFAULTS  */
 /* --------------------------------------------------------------------------------- */
 
@@ -77,7 +77,7 @@ main {
 
 /* #BUTTONS */
 .ui-button {
-    padding: .5rem 4.3rem; /* creates the size of the button*/
+    padding: .5rem 4rem; /* creates the size of the button*/
     border: transparent;
     border-radius: 100px;
     font-weight: var(--fontweight-heavy);
@@ -122,6 +122,7 @@ li:not([class]) a:hover {
 .card-container {
     gap: var(--gap);
     justify-content: space-between;
+    text-align: center;
 }
 .card-container > .flex { gap: var(--gap); }
 
@@ -149,7 +150,7 @@ li:not([class]) a:hover {
 }
 
 .flow > * { margin-top: var(--flow-space); }
-.flow-extra > * { margin-bottom: var(--flow-space-extra); margin-top: var(--flow-space-extra);}
+.flow-extra > * { margin-top: var(--flow-space-extra);}
 /* ------------------------------------------ */
 
 /* #COLOR SCHEMES */
@@ -197,9 +198,6 @@ li:not([class]) a:hover {
     transform: translateY(10px) scale(1.7);
 }
 
-.quoted::before {
-
-}
 /* ------------------------------------------ */
 
 /*#endregion UTILITIES */
@@ -281,49 +279,46 @@ li:not([class]) a:hover {
 
 /* ------------------------------------------ */
 /*#region : planning */
+.planning .card-container {
+    row-gap: 2rem;
+}
+
+.app-development-info p {
+    line-height: 1.8;
+}
+
 .scroll-down {
     margin: 2rem auto;
 }
 
-.scroll-down > * {
+.scroll-down a {
     padding: .9rem 1rem;
     border-radius: 50%;
+    transition: 
+        transform 200ms ease-out,
+        color 200ms;
+}
+
+.scroll-down a:hover {
+    transform: scale(1.6);
+    color: var(--clr-neutral-white);
 }
 /*#endregion : planning */
 /* ------------------------------------------ */
-/* .img-container {
-    overflow: hidden;
-    width: 200px;
-    margin: 0 auto;
-    aspect-ratio: 1 / 1;
-    background: no-repeat center/cover url(../assets/img/testimonial1.jpg);
-    border-radius: 50%;
-} */
 
-/* .img-container {
-    overflow: hidden;
-    margin: 0 auto;
-    width: 200px;
-    aspect-ratio: 1 / 1;
-    padding-top: 200px;
-    background-color: red;
-} */
-
+/* ------------------------------------------ */
+/*#region : testimonials */
 .img-container img {
-    max-width: 250px;
     width: 50vw;
-    min-width: 100px;
-    max-height: 250px;
+        max-width: 250px;
+        min-width: 100px;
     height: 50vw;
-    min-height: 100px;
+        max-height: 250px;
+        min-height: 100px;
     margin: 0 auto;
     object-fit: cover;
     border-radius: 100%;
 }
-
-/* ------------------------------------------ */
-/*#region : testimonials */
-
 /*#endregion : testimonials */
 /* ------------------------------------------ */
 
