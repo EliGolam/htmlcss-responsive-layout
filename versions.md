@@ -17,3 +17,11 @@ HTML components:
 
 - Header completed
 - section1 completed
+
+### V 0.1.3 : 
+
+HTML components: 
+
+- Header completed
+- section1 completed
+- section2 completed

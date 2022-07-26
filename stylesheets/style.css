@@ -110,6 +110,7 @@ li:not([class]) a:hover {
 }
 .card-container > .flex { gap: var(--gap); }
 .card-item { flex-grow: 1; }
+.card-box
 
 /* ------------------------------------------ */
 
@@ -146,6 +147,7 @@ li:not([class]) a:hover {
 .compass-drafting::before { content: '\f568'; }
 .laptop-code::before { content: '\f5fc'; }
 .bullhorn::before { content: '\f0a1'; }
+.arrow-down::before { content: '\f063'; }
 /* ------------------------------------------ */
 
 /*#endregion UTILITIES */
