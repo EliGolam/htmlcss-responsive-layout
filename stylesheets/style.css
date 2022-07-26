@@ -27,7 +27,7 @@ header {
 }
 
 main {
-    margin: 5rem 0;
+    margin: 7rem 0;
 }
 /*#endregion COMPOSITION */
 /* --------------------------------------------------------------------------------- */
@@ -161,7 +161,7 @@ li:not([class]) a:hover {
 /* ------------------------------------------ */
 
 /* #FONTAWESOME */
-.hamburger-menu::before { content: '\f0c9';}
+/* .hamburger-menu::before { content: '\f0c9';} */
 .file-code::before { content: '\f1c9'; }
 .compass-drafting::before { content: '\f568'; }
 .laptop-code::before { content: '\f5fc'; }
@@ -178,6 +178,54 @@ li:not([class]) a:hover {
 /* BLOCKS: component specific rules */
 /* --------------------------------------------------------------------------------- */
 
+/* ------------------------------------------ */
+/*#region : HEADER */
+.page-header {
+    padding: 1rem 0;
+    opacity: .93;
+    box-shadow: 0 0 1px 3px var(--clr-neutral-black-transparent);
+}
+
+.page-header .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header a {
+    border-bottom: 2px solid transparent;
+    transition: 
+        border-color 300ms ease-in;
+}
+
+.page-header a:hover {
+    border-color: var(--clr-neutral-white);
+}
+
+.page-header i {
+    font-size: var(--fontsize-large);
+}
+
+.page-header i {
+    cursor: pointer;
+    transition: 
+        transform 200ms ease-in;
+}
+
+.page-header i:hover {
+    transform: scale(1.4);
+}
+
+.page-header i:active {
+    transform: rotate(-0.25turn);
+}
+/*#endregion : HEADER */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/*#region : key-features */
+
+/*#endregion : key-features */
+/* ------------------------------------------ */
 
 /* --------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------- */

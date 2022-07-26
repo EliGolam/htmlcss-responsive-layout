@@ -85,3 +85,7 @@ HTML components: COMPLETED
 
 - Added Page defauls in CSS 
 - Styled utilities in CSS
+
+### V 0.3.1 :
+
+- Completed styling of the page-header
