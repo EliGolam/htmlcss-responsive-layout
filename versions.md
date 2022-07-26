@@ -113,3 +113,7 @@ HTML components: COMPLETED
 ## V 0.4
 
 - Completed general mobile layout
+
+## V 1.0
+
+- Added page responsiveness

@@ -51,11 +51,15 @@
             <h2 class="hidden-content">Product Key Features</h2>
 
             <div class="card-container content-width flex flex-column">
-                <div class="demo-offer features card-item card-box large-card flow background-neutral">
-                    <h3 class="feature__title">Get a demo application</h3>
-                    <p class="feature__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae blanditiis tempora accusamus, fugit optio sequi aperiam debitis iusto dolor incidunt.</p>
-                    <button class="features__cta  ui-button spaced-letters background-primary text-colour-light icon icon-space">App Store</button>
-                    <img class="features__img" src="./assets/img/phone.png" alt="Example of product in phone layout">
+                <div class="demo-offer features card-item card-box large-card flex flex-column flow background-neutral">
+                    <div class="flow">
+                        <h3 class="feature__title">Get a demo application</h3>
+                        <p class="feature__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae blanditiis tempora accusamus, fugit optio sequi aperiam debitis iusto dolor incidunt.</p>
+                        <button class="features__cta  ui-button spaced-letters background-primary text-colour-light icon icon-space">App Store</button>
+                    </div>
+                    <div class="features__img">
+                        <img  src="./assets/img/phone.png" alt="Example of product in phone layout">
+                    </div>                    
                 </div>
                 
                 <div class="features card-item card-box flow background-neutral">
@@ -115,20 +119,26 @@
                 <p>We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
 
                 <div class="card-container flex flex-column">
-                    <div class="card-item card-box background-secondary text-colour-light flow">
+                    <div class="card-item card-box flex flex-column background-secondary text-colour-light flow">
                         <div class="img-container"><img src="./assets/img/testimonial1.jpg" alt="One of our testimonials: Nat Reynolds"></div>
-                        <p class="testimonial__feedback icon quoted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusantium rerum eos sequi dolorum iste sed error nobis illum.</p>
-                        <h3 class="spaced-letters">Nat Reynolds</h3>
+                        <div>
+                            <p class="testimonial__feedback icon quoted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusantium rerum eos sequi dolorum iste sed error nobis illum.</p>
+                            <h3 class="spaced-letters">Nat Reynolds</h3>
+                        </div>
                     </div>
-                    <div class="card-item card-box background-secondary text-colour-light flow">
+                    <div class="card-item card-box flex flex-column background-secondary text-colour-light flow">
                         <div class="img-container"><img src="./assets/img/testimonial2.jpg" alt="One of our testimonials: Celia Almeda"></div>
-                        <p class="testimonial__feedback icon quoted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusantium rerum eos sequi dolorum iste sed error nobis illum.</p>
-                        <h3 class="spaced-letters">Celia Almeda</h3>
+                        <div>
+                            <p class="testimonial__feedback icon quoted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusantium rerum eos sequi dolorum iste sed error nobis illum.</p>
+                            <h3 class="spaced-letters">Celia Almeda</h3>
+                        </div>
                     </div>
-                    <div class="card-item card-box background-secondary text-colour-light flow">
+                    <div class="card-item card-box flex flex-column background-secondary text-colour-light flow">
                         <div class="img-container"><img src="./assets/img/testimonial3.jpg" alt="One of our testimonials: Bob Roberts"></div>
-                        <p class="testimonial__feedback icon quoted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusantium rerum eos sequi dolorum iste sed error nobis illum.</p>
-                        <h3 class="spaced-letters">Bob Roberts</h3>
+                        <div>
+                            <p class="testimonial__feedback icon quoted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo accusantium rerum eos sequi dolorum iste sed error nobis illum.</p>
+                            <h3 class="spaced-letters">Bob Roberts</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -185,14 +195,14 @@
         <!--#region : About Us  -->
         <section id="product-about-us" class="about-us">
             <div class="content-width">
-                <div class="flex flex-column flow">
-                    <div class="flow">
+                <div class="card-container flex flex-column flow">
+                    <div class="card-item flow">
                         <h2 class="text-colour-secondary">About Us</h2>
                         <p>Sample text. Click to Egestas egestas fringilla phasellus faucibus sceterisque eleifend donec pretium vulputate. Pharetra magna ac placerat vestibulum. Quam !Anus suspendisse faucibus interdum posuere totem. Egestas teltus rutrum tellus peltentesque eu tincidunt. Neque vitae tempus quam peltentesque nec. Vel elk scelerisque mauris peltentesque pulvinar pellentesque habitant morbi. Interdum vetit euismod in peltentesque massa placerat duis.</p>
                         <p>Quis viverra nibh cras pulvinar mattis. Ornare arcu dui vivamus arcu felis bibendum ut tristique. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Dignissim diam quis enim lobortis scelerisque. Tellus molestie nunc non blandit massa enim. the text box. Click again or double click to start editing the text.</p>
                     </div>
 
-                    <div class="about-us__claim flow">
+                    <div class="card-item about-us__claim flow">
                         <div class="img-container">
                             <img src="./assets/img/about.jpg" alt="Company owner's photo" />
                             <div class="quoted text-colour-secondary"></div>
@@ -224,7 +234,7 @@
     <!-- ------------------------------------------------------------------------ -->
     <!--#region : FOOTER  -->
     <footer class="page-footer background-dark text-colour-light">
-        <div class="content-width flow-extra">
+        <div class="content-width flow">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi maiores minima vitae vero nulla pariatur impedit!</p>
             <p><a href="#">Lorem ipsum</a> scelerisque mauris pellentesgue <a href="#">Boolean careers</a></p>
         </div>

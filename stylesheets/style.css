@@ -147,7 +147,7 @@ li:not([class]) a:hover {
 .hidden-content { display: none; }
 
 .content-width { 
-    max-width: var(--content-width-mobile); 
+    max-width: var(--content-width); 
     margin: 0 auto;
 }
 
@@ -279,6 +279,15 @@ li:not([class]) a:hover {
     color: var(--clr-primary);
 }
 
+.demo-offer {
+    justify-content: space-between;
+}
+
+.demo-offer > * {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
 .features.large-card {
     padding-bottom: 0;
 }
@@ -290,6 +299,8 @@ li:not([class]) a:hover {
 
 .features__img {
     margin-bottom: 0;
+    align-self: flex-end;
+    min-width: 50%;
 }
 
 .features__icon {
@@ -378,6 +389,11 @@ li:not([class]) a:hover {
 
 /* ------------------------------------------ */
 /*#region : about-us */
+.about-us .card-item {
+    text-align: left;
+    flex-grow: 0;
+}
+
 .about-us .img-container {
     position: relative;
 }
@@ -465,7 +481,74 @@ li:not([class]) a:hover {
 /* --------------------------------------------------------------------------------- */
 /*#region MEDIA QUERIES */
 @media only screen and (min-width: 480px) {
+    .key-features .card-container,
+    .benefits .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .key-features .card-item {
+        width: calc(100% / 3 - var(--gap));
+    }
+
+    .key-features .large-card {
+        width: calc((100% / 3) * 2 - var(--gap));
+    }
+
+    .testimonials .card-item {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .benefits .card-item {
+        width: calc(100% / 2 - var(--gap));
+    }
+
+    .about-us .flex {
+        flex-direction: row;
+        align-items: flex-start;
+        column-gap: 4rem;
+    }
+
+    .about-us__claim p {
+        font-size: var(--fontsize-default);
+    }
+
+    .about-us .quoted {
+        top: -40px;
+        left: 70%;
+    }   
+
+    .call-to-action > * {
+        max-width: 50ch;
+    }
+
+    .page-footer > * {
+        max-width: 45ch;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .demo-offer {
+        flex-direction: row;
+    }
     
+
+    .benefits .card-item {
+        width: calc(100% / 3 - var(--gap));
+    }
+
+    .planning .card-container {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        column-gap: var(--gap);
+    }
+
+    .planning .card-container > * {
+        width: calc(80% / 2 - var(--gap));
+    }
 }
 /*#endregion MEDIA QUERIES */
 /* --------------------------------------------------------------------------------- */
