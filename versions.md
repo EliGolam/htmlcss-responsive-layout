@@ -44,3 +44,14 @@ HTML components:
 - planning section completed
 - testimonials section completed
 - benefits section completed
+
+### V 0.1.6 : 
+
+HTML components: 
+
+- Header completed
+- key-features section completed
+- planning section completed
+- testimonials section completed
+- benefits section completed
+- about-us section completed
