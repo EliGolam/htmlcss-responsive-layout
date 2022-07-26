@@ -34,3 +34,13 @@ HTML components:
 - key-features section completed
 - planning section completed
 - testimonials section completed
+
+### V 0.1.5 : 
+
+HTML components: 
+
+- Header completed
+- key-features section completed
+- planning section completed
+- testimonials section completed
+- benefits section completed
