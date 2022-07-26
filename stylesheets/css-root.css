@@ -23,12 +23,13 @@
     --fontsize-default: 1.1rem;
     --fontsize-large: 2rem;
     --fontsize-heading: 2.5rem;
+    --fontsize-large-icon: 6rem;
     --fontsize-title: 3rem;
 
     --gap: 1rem;
     --general-gap: 1rem;
-    --flow-space: 1em;
-    --flow-space-extra: 3rem;
+    --flow-space: 1rem;
+    --flow-space-extra: 5rem;
     
 
     --content-width-mobile: 400px;

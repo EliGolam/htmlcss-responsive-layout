@@ -89,3 +89,7 @@ HTML components: COMPLETED
 ### V 0.3.1 :
 
 - Completed styling of the page-header
+
+### V 0.3.2 : 
+
+- Completed Styling of key-features section
