@@ -25,3 +25,12 @@ HTML components:
 - Header completed
 - section1 completed
 - section2 completed
+
+### V 0.1.4 : 
+
+HTML components: 
+
+- Header completed
+- key-features section completed
+- planning section completed
+- testimonials section completed
