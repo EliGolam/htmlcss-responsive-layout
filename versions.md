@@ -7,7 +7,13 @@
 
 ### V 0.1.1 : 
 
+HTML components:  
+  
+- Header completed
+
+### V 0.1.2 : 
+
 HTML components: 
 
 - Header completed
-
+- section1 completed
