@@ -4,6 +4,7 @@
     /* Website Color Scheme */
     --clr-primary: rgb(0, 132, 253);
     --clr-secondary: rgb(151, 146, 228);
+    --clr-accent: #fdc15f;
     --clr-neutral: rgb(181, 221, 255);
 
     --clr-neutral-white: rgb(249, 253, 255);
@@ -24,7 +25,7 @@
     --fontsize-large: 2rem;
     --fontsize-heading: 2.5rem;
     --fontsize-large-icon: 6rem;
-    --fontsize-title: 3rem;
+    --fontsize-even-larger: 4rem;
 
     --gap: 1rem;
     --general-gap: 1rem;
@@ -32,5 +33,5 @@
     --flow-space-extra: 5rem;
     
 
-    --content-width-mobile: 900px;
+    --content-width: 900px;
 }

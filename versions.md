@@ -109,3 +109,7 @@ HTML components: COMPLETED
 ### V 0.3.6
 
 - Completed styling of about-us section
+
+## V 0.4
+
+- Completed general mobile layout

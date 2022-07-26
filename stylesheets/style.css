@@ -82,7 +82,6 @@ main {
     border: transparent;
     border-radius: 100px;
     font-weight: var(--fontweight-heavy);
-    letter-spacing: 2.5px;
     cursor: pointer;
 
     transition: 
@@ -167,6 +166,10 @@ li:not([class]) a:hover {
 
     position: relative;
 }
+
+.spaced-letters {
+    letter-spacing: .2rem;
+}
 /* ------------------------------------------ */
 
 /* #COLOR SCHEMES */
@@ -188,6 +191,8 @@ li:not([class]) a:hover {
 .text-colour-primary {color: var(--clr-primary);}
 
 .text-colour-secondary {color: var(--clr-secondary);}
+
+.text-colour-accent { color: var(--clr-accent);}
 /* ------------------------------------------ */
 
 /* #FONTAWESOME */
@@ -332,7 +337,6 @@ li:not([class]) a:hover {
 .testimonials h3 {
     text-transform: uppercase;
     font: var(--fontweight-heavy) var(--fontsize-default) var(--fontfamily-primary);
-    letter-spacing: .2rem;
 }
 
 .testimonials img {
@@ -400,13 +404,57 @@ li:not([class]) a:hover {
 
 .about-us__claim .ui-button {
     padding: .5rem 1.5rem;
-    letter-spacing: 0;
 }
 /*#endregion : about-us */
 /* ------------------------------------------ */
 
 /* ------------------------------------------ */
 /*#region : call-to-action */
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action h2 {
+    text-transform: uppercase;
+    font-weight: var(--fontweight-heavy);
+    font-size: var(--fontsize-default);
+}
+
+.call-to-action__claim {
+    font-weight: var(--fontweight-heavy);
+    font-size: var(--fontsize-heading);
+}
+
+.call-to-action__offer {
+    font-weight: var(--fontweight-heavy);
+    font-size: var(--fontsize-even-larger);
+}
+
+.call-to-action .ui-button {
+    font-size: var(--fontsize-large);
+    margin: 2rem auto;
+    padding: 1.2rem 3rem;
+}
+
+.call-to-action a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+/*#endregion : call-to-action */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/*#region : FOOTER */
+.page-footer {
+    text-align: center;
+}
+
+.page-footer a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: var(--clr-secondary);
+}
+/*#endregion : FOOTER */
 /* ------------------------------------------ */
 
 /* --------------------------------------------------------------------------------- */
@@ -416,8 +464,8 @@ li:not([class]) a:hover {
 
 /* --------------------------------------------------------------------------------- */
 /*#region MEDIA QUERIES */
-@media only screen and (max-width: 1000px) {
-
+@media only screen and (min-width: 480px) {
+    
 }
 /*#endregion MEDIA QUERIES */
 /* --------------------------------------------------------------------------------- */
