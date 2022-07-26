@@ -2,8 +2,9 @@
 /* These are some generic design choices for colour schemes, fonts and backgrounds */
 :root {
     /* Website Color Scheme */
-    --clr-primary: rgb(236, 46, 103);
-    --clr-secondary: rgb(66, 228, 179);
+    --clr-primary: rgb(0, 132, 253);
+    --clr-secondary: rgb(151, 146, 228);
+    --clr-neutral: rgb(181, 221, 255);
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(25, 25, 25, 1);
@@ -18,12 +19,16 @@
     --fontweight-heavy: 700;
 
     --fontsize-small: 0.7rem;
-    --fontsize-normal: 1.1rem;
+    --fontsize-default: 1.1rem;
     --fontsize-large: 2rem;
+    --fontsize-heading: 2.5rem;
     --fontsize-title: 3rem;
 
     --gap: 1rem;
-    --flow-spacer: 1em;
-    --content-width: 900px;
     --general-gap: 1rem;
+    --flow-space: 1em;
+    --flow-space-extra: 3rem;
+    
+
+    --content-width-mobile: 400px;
 }

@@ -18,7 +18,17 @@ h2 { font-size: var(--fontsize-heading); font-weight: var(--fontweight-normal); 
 /* --------------------------------------------------------------------------------- */
 /*#region COMPOSITION */
 /* Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
+header {
+    position: fixed;
+        top: 0;
+        z-index: 5;
+    width: 100%;
+    min-height: 60px;
+}
 
+main {
+    margin: 5rem 0;
+}
 /*#endregion COMPOSITION */
 /* --------------------------------------------------------------------------------- */
 
@@ -37,8 +47,8 @@ h2 { font-size: var(--fontsize-heading); font-weight: var(--fontweight-normal); 
     font: var(--fa-font-solid);
 }
 
-.icon::before { margin-right: .5rem; } /* Gives a little bit of space to avoid the */ 
-.icon::after { margin-left: .5rem; } /* icon being too close to the other elements*/
+.icon-space::before { margin-right: .5rem; } /* Gives a little bit of space to avoid the */ 
+.icon-space::after { margin-left: .5rem; } /* icon being too close to the other elements*/
 
 .social-links > .icon::before,
 .social-links > .icon::after {
@@ -110,14 +120,22 @@ li:not([class]) a:hover {
 }
 .card-container > .flex { gap: var(--gap); }
 .card-item { flex-grow: 1; }
-.card-box
+.card-box {
+    border: 2px dotted red;
+    border-radius: 25px;
+    text-align: center;
+    padding: .7rem 2rem;
+}
 
 /* ------------------------------------------ */
 
 /* #AESTHETIC ELEMENTS */
 .hidden-content { display: none; }
 
-.content-width { max-width: var(--content-width); margin: 0 auto;}
+.content-width { 
+    max-width: var(--content-width-mobile); 
+    margin: 0 auto;
+}
 
 .flow > * { margin-bottom: var(--flow-space); margin-top: var(--flow-space); }
 .flow-extra > * { margin-bottom: var(--flow-space-extra); margin-top: var(--flow-space-extra);}
@@ -133,7 +151,7 @@ li:not([class]) a:hover {
 
 .background-secondary { background-color: var(--clr-secondary);}
 
-.background-secondary-darker { background-color: var(--clr-secondary-darker);}
+.background-neutral { background-color: var(--clr-neutral);}
 
 .text-colour-dark {color: var(--clr-neutral-black);}
 
@@ -143,6 +161,7 @@ li:not([class]) a:hover {
 /* ------------------------------------------ */
 
 /* #FONTAWESOME */
+.hamburger-menu::before { content: '\f0c9';}
 .file-code::before { content: '\f1c9'; }
 .compass-drafting::before { content: '\f568'; }
 .laptop-code::before { content: '\f5fc'; }

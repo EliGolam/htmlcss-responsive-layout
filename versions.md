@@ -68,7 +68,7 @@ HTML components:
 - about-us section completed
 - call-to-action section completed
 
-### V 0.2: 
+## V 0.2: 
 
 HTML components: COMPLETED 
 
@@ -80,3 +80,8 @@ HTML components: COMPLETED
 - about-us section completed
 - call-to-action section completed
 - footer-completed
+
+## V 0.3: 
+
+- Added Page defauls in CSS 
+- Styled utilities in CSS
