@@ -101,3 +101,7 @@ HTML components: COMPLETED
 ### V 0.3.4
 
 - Completed styling of testimonials section
+
+### V 0.3.5
+
+- Completed styling of benefits section

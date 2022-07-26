@@ -126,11 +126,13 @@ li:not([class]) a:hover {
 }
 .card-container > .flex { gap: var(--gap); }
 
-.card-item { flex-grow: 1; }
+.card-item { 
+    flex-grow: 1;
+    text-align: center; 
+}
 
 .card-box {
     border-radius: 35px;
-    text-align: center;
     padding: 1rem 2rem 2.5rem 2rem;
     overflow: hidden;
 }
@@ -346,6 +348,21 @@ li:not([class]) a:hover {
     max-width: 50ch;
 }
 /*#endregion : testimonials */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/*#region : benefits */
+.benefits .card-item {
+    text-align: left;
+    background-color: var(--clr-neutral-white);
+    color: var(--clr-neutral-black);
+}
+
+.counter {
+    font-weight: var(--fontweight-heavy);
+    font-size: var(--fontsize-heading);
+}
+/*#endregion : benefits */
 /* ------------------------------------------ */
 
 /* --------------------------------------------------------------------------------- */
