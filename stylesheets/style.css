@@ -1,0 +1,53 @@
+/* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
+/* Page Layout choices */
+body { font:  var(--fontweight-normal) var(--fontsize-normal) var(--fontfamily-primary); }
+
+
+/* Component Layout choices */
+
+/* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
+.icon::before, 
+.icon::after { 
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;  
+
+    font: var(--fa-font-solid);
+}
+
+.social-links > .icon::before,
+.social-links > .icon::after {
+    font: var(--fa-font-brands);
+}
+
+.hidden-content { display: none; }
+
+.content-width { max-width: var(--content-width); margin: 0 auto;}
+
+.flow > * { margin-top: 2.5rem; }
+
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+
+/* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
+.background-light { background-color: var(--clr-neutral-white); }
+
+.background-dark { background-color: var(--clr-neutral-black); }
+
+.background-primary { background-color: var(--clr-primary);}
+
+.background-secondary { background-color: var(--clr-secondary);}
+
+.text-colour-dark {color: var(--clr-neutral-black);}
+
+.text-colour-light {color: var(--clr-neutral-white);}
+
+/* BLOCKS: component specific rules */
+
+/* EXCEPTIONS: variations to a block */
+
+/* MEDIA QUERIES */
+@media screen and (max-width:700px) {
+  
+}
