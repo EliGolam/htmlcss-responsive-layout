@@ -67,3 +67,16 @@ HTML components:
 - benefits section completed
 - about-us section completed
 - call-to-action section completed
+
+### V 0.2: 
+
+HTML components: COMPLETED 
+
+- Header completed
+- key-features section completed
+- planning section completed
+- testimonials section completed
+- benefits section completed
+- about-us section completed
+- call-to-action section completed
+- footer-completed
