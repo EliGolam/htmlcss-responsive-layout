@@ -55,3 +55,15 @@ HTML components:
 - testimonials section completed
 - benefits section completed
 - about-us section completed
+
+### V 0.1.7 : 
+
+HTML components: 
+
+- Header completed
+- key-features section completed
+- planning section completed
+- testimonials section completed
+- benefits section completed
+- about-us section completed
+- call-to-action section completed
