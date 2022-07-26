@@ -31,7 +31,7 @@ header {
 }
 
 main {
-    margin: 2rem 0;
+    margin-top: 5rem;
 }
 /*#endregion COMPOSITION */
 /* --------------------------------------------------------------------------------- */
@@ -55,7 +55,9 @@ main {
 .icon-space::after { margin-left: .5rem; } /* icon being too close to the other elements*/
 
 .social-links > .icon::before,
-.social-links > .icon::after {
+.social-links > .icon::after,
+.social-links.icon::before,
+.social-links.icon::after {
     font: var(--fa-font-brands);
 }
 
@@ -72,7 +74,6 @@ main {
     color: var(--clr-secondary);
     transform: scale(1.2);
 }
-
 /* ------------------------------------------ */
 
 /* #BUTTONS */
@@ -153,6 +154,19 @@ li:not([class]) a:hover {
 
 .flow > * { margin-top: var(--flow-space); }
 .flow-extra > * { margin-top: var(--flow-space-extra);}
+
+.img-container img {
+    width: 50vw;
+        max-width: 250px;
+        min-width: 100px;
+    height: 50vw;
+        max-height: 250px;
+        min-height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+
+    position: relative;
+}
 /* ------------------------------------------ */
 
 /* #COLOR SCHEMES */
@@ -183,6 +197,7 @@ li:not([class]) a:hover {
 .laptop-code::before { content: '\f5fc'; }
 .bullhorn::before { content: '\f0a1'; }
 .arrow-down::before { content: '\f063'; }
+.linkedin::before { content: '\f08c'; }
 
 .quoted::before,
 .quoted::after {
@@ -320,6 +335,10 @@ li:not([class]) a:hover {
     letter-spacing: .2rem;
 }
 
+.testimonials img {
+    margin: 0 auto;
+}
+
 .testimonials__claim {
     font-size: var(--fontsize-heading);
     font-weight: var(--fontweight-heavy);
@@ -329,18 +348,6 @@ li:not([class]) a:hover {
 .testimonials .card-container {
     margin-top: 3rem;
     row-gap: 2rem;
-}
-
-.img-container img {
-    width: 50vw;
-        max-width: 250px;
-        min-width: 100px;
-    height: 50vw;
-        max-height: 250px;
-        min-height: 100px;
-    margin: 0 auto;
-    object-fit: cover;
-    border-radius: 100%;
 }
 
 .testimonial__feedback {
@@ -363,6 +370,43 @@ li:not([class]) a:hover {
     font-size: var(--fontsize-heading);
 }
 /*#endregion : benefits */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/*#region : about-us */
+.about-us .img-container {
+    position: relative;
+}
+
+.about-us .quoted {
+    font-size: 200px;
+    position: absolute;
+        top: -20px;
+        left: 40%;
+}
+
+.about-us .quoted::before {
+    opacity: .9;
+}
+
+.about-us .quoted::after {
+    display: none;
+}
+
+.about-us__claim p {
+    font-weight: var(--fontweight-heavy);
+    font-size: var(--fontsize-large);
+}
+
+.about-us__claim .ui-button {
+    padding: .5rem 1.5rem;
+    letter-spacing: 0;
+}
+/*#endregion : about-us */
+/* ------------------------------------------ */
+
+/* ------------------------------------------ */
+/*#region : call-to-action */
 /* ------------------------------------------ */
 
 /* --------------------------------------------------------------------------------- */

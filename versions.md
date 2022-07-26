@@ -105,3 +105,7 @@ HTML components: COMPLETED
 ### V 0.3.5
 
 - Completed styling of benefits section
+
+### V 0.3.6
+
+- Completed styling of about-us section
