@@ -189,13 +189,12 @@ li:not([class]) a:hover {
 
 .quoted::before { 
     content: open-quote; 
-    margin-right: 1rem;
-    transform: translateY(-15px) scale(1.7); 
+    transform: translate(-20px, -15px) scale(1.7); 
 } 
 .quoted::after { 
     content: close-quote; 
-    margin-left: 1rem;
-    transform: translateY(10px) scale(1.7);
+    margin-left: .5rem;
+    transform: translate(20px, 10px) scale(1.7);
 }
 
 /* ------------------------------------------ */
@@ -308,6 +307,28 @@ li:not([class]) a:hover {
 
 /* ------------------------------------------ */
 /*#region : testimonials */
+.testimonials {
+    text-align: center;
+}
+
+.testimonials h2, 
+.testimonials h3 {
+    text-transform: uppercase;
+    font: var(--fontweight-heavy) var(--fontsize-default) var(--fontfamily-primary);
+    letter-spacing: .2rem;
+}
+
+.testimonials__claim {
+    font-size: var(--fontsize-heading);
+    font-weight: var(--fontweight-heavy);
+    color: var(--clr-secondary);
+}
+
+.testimonials .card-container {
+    margin-top: 3rem;
+    row-gap: 2rem;
+}
+
 .img-container img {
     width: 50vw;
         max-width: 250px;
@@ -318,6 +339,11 @@ li:not([class]) a:hover {
     margin: 0 auto;
     object-fit: cover;
     border-radius: 100%;
+}
+
+.testimonial__feedback {
+    margin: 1rem auto 2.4rem auto;
+    max-width: 50ch;
 }
 /*#endregion : testimonials */
 /* ------------------------------------------ */

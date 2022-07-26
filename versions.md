@@ -97,3 +97,7 @@ HTML components: COMPLETED
 ### V 0.3.3
 
 - Completed styling of planning section
+
+### V 0.3.4
+
+- Completed styling of testimonials section
